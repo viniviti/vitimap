@@ -1,0 +1,107 @@
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Foldit:wght@400;500;600;700&&family=Sigmar&family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+
+/* GERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primeira-fonte: "Foldit", cursive;
+  --segunda-fonte: "Source Sans Pro", sans-serif;
+  --terceira-fonte: "Sigmar", cursive;
+
+  --primeira-cor: #fd7d22;
+  --segunda-cor: #;
+  --terceira-cor: #333333;
+  --quarta-cor: #eeeeee;
+  --quinta-cor: #444444;
+  --sexta-cor: #cccccc;
+  --setima-cor: #666666;
+  --cor-branca: #ffffff;
+  --cor-preta: #000000;
+}
+
+body {
+  font-family: var(--segunda-fonte);
+  background-color: var(--quarta-cor);
+  font-size: 16px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(
+    145deg,
+    var(--cor-branca),
+    var(--terceira-cor)
+  );
+}
+
+main {
+  margin: 30px;
+}
+
+a {
+  user-select: none;
+}
+
+.title {
+  font-size: 2.5rem;
+  letter-spacing: 0.7rem;
+  font-weight: 400;
+  font-family: var(--terceira-fonte);
+  margin-bottom: 20px;
+  text-align: center;
+  user-select: none;
+}
+
+/* MAIN */
+.logo {
+  font-family: var(--primeira-fonte);
+  font-size: 6rem;
+  text-shadow: 5px 5px 5px var(--cor-preta);
+  user-select: none;
+  cursor: grab;
+  padding: 50px 0;
+}
+
+.logo:active {
+  cursor: grabbing;
+}
+
+.vitimap__text {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.comeco__container {
+  padding: 20px 0;
+}
+
+.comeco__btn {
+  text-decoration: none;
+  color: var(--cor-branca);
+  background-image: linear-gradient(
+    120deg,
+    var(--quinta-cor),
+    var(--sexta-cor)
+  );
+  box-shadow: 5px 5px 4px var(--cor-preta);
+  padding: 5px 50px;
+  font-size: 1.4rem;
+  border-radius: 50px;
+  animation: botaoAnimado 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes botaoAnimado {
+  from {
+    padding: 5px 60px;
+  }
+
+  to {
+    padding: 5px 75px;
+  }
+}
